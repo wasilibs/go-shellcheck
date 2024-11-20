@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "name": "/",
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": ["esbenp.prettier-vscode"]
+  },
+  "settings": {
+    "editor.tabSize": 2,
+    "[github-actions-workflow]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "go.lintFlags": ["--fix"],
+    "go.lintOnSave": "package",
+    "go.lintTool": "golangci-lint",
+    "gopls": {
+      "formatting.gofumpt": true
+    },
+    "[markdown]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+rules:
+  document-start: disable
+  truthy:
+    check-keys: false
