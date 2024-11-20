@@ -10,26 +10,5 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        os:
-          - macos-13
-          - macos-14
-          - ubuntu-22.04
-          - windows-2022
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-go@v5
-        with:
-          go-version-file: go.work
-          cache-dependency-path: "**/go.sum"
-
-      - name: run checks
-        run: go run ./build check
-
-      - name: build snapshot
-        if: startsWith(matrix.os, 'ubuntu-')
-        run: go run ./build snapshot
+    uses: wasilibs/actions/.github/workflows/ci.yaml@eeee5d072ee283c12eb68e2c4969012fae3d6dd0
+    secrets: inherit
