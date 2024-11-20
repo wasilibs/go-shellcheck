@@ -28,8 +28,8 @@ jobs:
           cache-dependency-path: "**/go.sum"
 
       - name: run checks
-        run: go run build check
+        run: go run ./build check
 
       - name: build snapshot
         if: startsWith(matrix.os, 'ubuntu-')
-        run: go run build snapshot
+        run: go run ./build snapshot

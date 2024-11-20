@@ -17,7 +17,7 @@ jobs:
           go-version-file: go.work
           cache-dependency-path: "**/go.sum"
 
-      - run: go run build update
+      - run: go run ./build update
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
