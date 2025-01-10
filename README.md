@@ -21,6 +21,9 @@ To avoid installation entirely, it can be convenient to use `go run`
 $ go run github.com/wasilibs/go-shellcheck/cmd/shellcheck@latest *.sh
 ```
 
+_Due to [potential build breakage](https://github.com/golang/go/issues/71192) unrelated to this project,
+`go tool` is not supported._
+
 Note that due to the sandboxing of the filesystem when using Wasm, currently only files that descend
 from the current directory when executing the tool are accessible to it, i.e., `../sql/my.sh` or
 `/separate/root/my.sh` will not be found.

@@ -27,7 +27,7 @@ linters-settings:
     sections:
       - standard
       - default
-      - prefix(github.com/wasilibs/go-prettier)
+      - prefix(github.com/wasilibs/go-shellcheck)
   gosec:
     config:
       G306: "0644"
