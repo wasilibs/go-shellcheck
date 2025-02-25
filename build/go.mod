@@ -1,10 +1,10 @@
 module github.com/wasilibs/go-shellcheck/build
 
-go 1.22
+go 1.23.0
 
 require (
 	github.com/goyek/x v0.2.0
-	github.com/wasilibs/tools v0.0.0-20240627054647-1aadfa8fce7f
+	github.com/wasilibs/tools v0.0.0-20250219024803-c9a0b46f9684
 )
 
 require (
@@ -12,7 +12,7 @@ require (
 	github.com/cli/go-gh/v2 v2.11.0 // indirect
 	github.com/cli/safeexec v1.0.1 // indirect
 	github.com/cli/shurcooL-graphql v0.0.4 // indirect
-	github.com/curioswitch/go-build v0.0.0-20241106032841-b5963b7edb55 // indirect
+	github.com/curioswitch/go-build v0.1.0 // indirect
 	github.com/fatih/color v1.18.0 // indirect
 	github.com/google/go-github v17.0.0+incompatible // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
