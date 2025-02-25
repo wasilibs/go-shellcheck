@@ -8,6 +8,7 @@ github.com/cli/shurcooL-graphql v0.0.4 h1:6MogPnQJLjKkaXPyGqPRXOI2qCsQdqNfUY1QSJ
 github.com/cli/shurcooL-graphql v0.0.4/go.mod h1:3waN4u02FiZivIV+p1y4d0Jo1jc6BViMA73C+sZo2fk=
 github.com/curioswitch/go-build v0.0.0-20241106032841-b5963b7edb55 h1:GA5S5EIJ0VJwYjK3fd3A52UrKIk63W0I+Nf9Pm2k+lI=
 github.com/curioswitch/go-build v0.0.0-20241106032841-b5963b7edb55/go.mod h1:N585oVwaSkxE9Iwus9TAHJEkoSQ+1/sSNFxFqLzn4iU=
+github.com/curioswitch/go-build v0.1.0/go.mod h1:N585oVwaSkxE9Iwus9TAHJEkoSQ+1/sSNFxFqLzn4iU=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fatih/color v1.18.0 h1:S8gINlzdQ840/4pfAwic/ZE0djQEH3wM94VfqLTZcOM=
@@ -54,6 +55,8 @@ github.com/thlib/go-timezone-local v0.0.3 h1:ie5XtZWG5lQ4+1MtC5KZ/FeWlOKzW2nPoUn
 github.com/thlib/go-timezone-local v0.0.3/go.mod h1:/Tnicc6m/lsJE0irFMA0LfIwTBo4QP7A8IfyIv4zZKI=
 github.com/wasilibs/tools v0.0.0-20240627054647-1aadfa8fce7f h1:uKuQq7ZZEajQHnfCRuYXyDm8Hj19TkRo+vZncYzdOS0=
 github.com/wasilibs/tools v0.0.0-20240627054647-1aadfa8fce7f/go.mod h1:756c6OtTEJS3KAetfQ1zDlNv4zTvOFkLPgFoTQmhoUk=
+github.com/wasilibs/tools v0.0.0-20250219024803-c9a0b46f9684 h1:muQunC13dZBaQGhZ0GH2j25LjHVumjAYOh8uWp0Bb6k=
+github.com/wasilibs/tools v0.0.0-20250219024803-c9a0b46f9684/go.mod h1:RlsSM7x9TZ/zOP9wkcdwkCkYQY/b3rFa9CTlJ54lQjw=
 golang.org/x/mod v0.22.0 h1:D4nJWe9zXqHOmWqj4VMOJhvzj7bEZg4wEYa759z1pH4=
 golang.org/x/mod v0.22.0/go.mod h1:6SkKJ3Xj0I0BrPOZoBy3bdMptDDU9oJrpohJ3eWZ1fY=
 golang.org/x/sys v0.0.0-20210831042530-f4d43177bf5e/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
