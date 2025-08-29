@@ -16,7 +16,7 @@
     },
     "go.lintFlags": ["--fix"],
     "go.lintOnSave": "package",
-    "go.lintTool": "golangci-lint",
+    "go.lintTool": "golangci-lint-v2",
     "gopls": {
       "formatting.gofumpt": true
     },
