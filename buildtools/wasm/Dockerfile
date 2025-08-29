@@ -1,8 +1,11 @@
 FROM debian:12-slim
 
-RUN apt-get update && apt-get install -y binaryen build-essential curl jq unzip xz-utils zstd
+RUN apt-get update && apt-get install -y binaryen build-essential curl git jq unzip xz-utils zstd
 
-RUN curl https://gitlab.haskell.org/ghc/ghc-wasm-meta/-/raw/master/bootstrap.sh | sh
+WORKDIR /ghc
+# Use version before tail call extension usage
+RUN curl -f -L --retry 5 https://gitlab.haskell.org/haskell-wasm/ghc-wasm-meta/-/archive/ada3b8fa0f763e4dccb2b1f6bbf2518bff2a7c6e/ghc-wasm-meta-ada3b8fa0f763e4dccb2b1f6bbf2518bff2a7c6e.tar.gz | tar xz --strip-components=1
+RUN ./setup.sh
 
 WORKDIR /shellcheck
 ADD buildtools/wasm/version.txt version.txt
