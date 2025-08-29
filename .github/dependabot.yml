@@ -10,7 +10,8 @@ updates:
           - "*"
 
   - package-ecosystem: gomod
-    directory: /
+    directories:
+      - "*/**"
     schedule:
       interval: weekly
     groups:
