@@ -36,6 +36,10 @@ func Run(name string, args []string, wasm []byte, stdin io.Reader, stdout io.Wri
 						WithArgs(args...).
 						WithFSConfig(wazero.NewFSConfig().(sysfs.FSConfig).WithSysFSMount(root, "/"))
 	for _, env := range os.Environ() {
+		if env == "" {
+			// Work around possible bug in Go on Windows returning empty env variables.
+			continue
+		}
 		k, v, _ := strings.Cut(env, "=")
 		if k == "PWD" {
 			// Causes Haskell runtime to try chdir which isn't supported in wasip1
