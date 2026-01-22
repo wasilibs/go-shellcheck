@@ -11,5 +11,5 @@ permissions:
 
 jobs:
   build:
-    uses: wasilibs/actions/.github/workflows/update.yaml@eeee5d072ee283c12eb68e2c4969012fae3d6dd0
+    uses: wasilibs/actions/.github/workflows/update.yaml@2c5c69270ae8b3bb967e6d0f598d207c73adeb0b
     secrets: inherit
