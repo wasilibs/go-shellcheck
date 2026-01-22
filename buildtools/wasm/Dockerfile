@@ -1,4 +1,4 @@
-FROM debian:12-slim
+FROM debian:13-slim
 
 RUN apt-get update && apt-get install -y binaryen build-essential curl git jq unzip xz-utils zstd
 
