@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>curioswitch/go-build:renovate-export"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/(^|/)buf.gen.yaml$/"],
+      "datasourceTemplate": "go",
+      "matchStrings": [
+        "# renovate: (?<depName>[^\\s]*)\\s+[^@]+@(?<currentValue>[^\\s]*)"
+      ]
+    }
+  ]
+}
