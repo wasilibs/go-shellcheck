@@ -1,7 +1,7 @@
 # go-shellcheck
 
-go-shellcheck is a distribution of [shellcheck][1], that can be built with Go. It does not actually reimplement any
-functionality of shellcheck in Go, instead compiling it with the GHC WASI backend, and
+go-shellcheck is a distribution of [shellcheck][1], that can be built with Go. It does not actually
+reimplement any functionality of shellcheck in Go, instead compiling it with the GHC WASI backend, and
 executing with the pure Go Wasm runtime [wazero][2]. This means that `go install` or `go run`
 can be used to execute it, with no need to rely on separate package managers such as pnpm,
 on any platform that Go supports.
@@ -12,13 +12,13 @@ Precompiled binaries are available in the [releases](https://github.com/wasilibs
 Alternatively, install the plugin you want using `go install`.
 
 ```bash
-$ go install github.com/wasilibs/go-shellcheck/cmd/shellcheck@latest
+go install github.com/wasilibs/go-shellcheck/cmd/shellcheck@latest
 ```
 
 To avoid installation entirely, it can be convenient to use `go run`
 
 ```bash
-$ go run github.com/wasilibs/go-shellcheck/cmd/shellcheck@latest *.sh
+go run github.com/wasilibs/go-shellcheck/cmd/shellcheck@latest *.sh
 ```
 
 _Due to [potential build breakage](https://github.com/golang/go/issues/71192) unrelated to this project,
